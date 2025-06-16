@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 
 function ProductFetcher({ onProductsLoaded }) {
@@ -6,6 +6,7 @@ function ProductFetcher({ onProductsLoaded }) {
     const fetchProducts = async () => {
       try {
         const res = await axios.get('https://fakestoreapi.com/products');
+        console.log('Fetched products:', res.data);
         onProductsLoaded(res.data);
       } catch (error) {
         console.error('Failed to fetch products:', error);
