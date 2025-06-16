@@ -5,10 +5,13 @@ import ProductGrid from '../Components/Home/ProductGrid.js';
 import Loader from '../Components/Home/Loader.js';
 import { fetchProducts } from '../Services/ProductService.js';
 
-const Home = () => {
+function Home() {
   const [products, setProducts] = useState([]);
   const [sortOption, setSortOption] = useState('name-asc');
   const [loading, setLoading] = useState(true);
+
+
+  // Error Handling
 
   useEffect(() => {
     fetchProducts()
@@ -22,7 +25,8 @@ const Home = () => {
       });
   }, []);
 
-  // Sort products according to sortOption
+  // Sorting function
+  
   const sortedProducts = [...products].sort((a, b) => {
     switch (sortOption) {
       case 'name-asc':

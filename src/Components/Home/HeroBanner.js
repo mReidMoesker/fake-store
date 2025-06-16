@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Simple static banner - you can replace with carousel later
-const HeroBanner = () => {
+function HeroBanner() {
   return (
     <div
       style={{
