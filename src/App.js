@@ -1,8 +1,10 @@
-import './css/index.css';
+import Home from '../src/Pages/Home.js';
 
 function App() {
   return (
-    <></>
+    <>
+    <Home />
+    </>
   );
 }
 
