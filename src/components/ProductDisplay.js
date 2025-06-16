@@ -14,9 +14,9 @@ function ProductDisplay({ products }) {
       <h2>🛍️ Product List ({products.length} items)</h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
         {products.map((product) => (
-          <li key={product.id} style={{ marginBottom: '1rem' }}>
+          <li key={product.id} className="product-list">
             <h3>{product.title}</h3>
-            <img src={product.image} alt={product.title} width="100" />
+            <img src={product.image} alt={product.title} className="product-image" />
             <p>${product.price}</p>
           </li>
         ))}
