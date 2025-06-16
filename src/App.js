@@ -9,11 +9,9 @@ function App() {
     <>
       <Header />
       <main>
-        <div className='container'>
-          <Routes>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
       <Footer />
     </>
