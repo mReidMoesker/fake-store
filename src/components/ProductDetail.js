@@ -13,14 +13,17 @@ function ProductDetails({ product }) {
   if (!product) return <p>Loading product...</p>;
 
   return (
-    <div>
+    <div className='container'>
       <h2>{product.title}</h2>
-      <img src={product.image} alt={product.title} width="150" />
-      <p><strong>Price:</strong> ${product.price}</p>
-      <p>{product.description}</p>
-      <p><em>Category:</em> {product.category}</p>
-
-      <button onClick={handleAddToCart}>Add to Cart</button>
+      <div className='flex product-box'>
+        <img src={product.image} alt={product.title} className='product-image' />
+        <div className='product-text'>
+          <p className='product-price'>${product.price}</p>
+          <p>{product.description}</p>
+          <p><em>Category:</em> {product.category}</p>
+          <button onClick={handleAddToCart}>Add to Cart</button>
+        </div>
+      </div>
     </div>
   );
 }

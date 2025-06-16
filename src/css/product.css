@@ -12,10 +12,48 @@ code {
     monospace;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container {
+  margin: 50px;
+  width: 70%;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.product-box {
+  padding: 30px;
+  gap: 30px;
+}
+
 .product-list {
   margin-bottom: 16px;
 }
 
+.product-price {
+  font-weight: 500;
+  font-size: 25px;
+}
+
 .product-image {
-  width: 100px;
+  width: 20%;
+  padding-right: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: rgb(175, 175, 1);
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: yellow;
 }

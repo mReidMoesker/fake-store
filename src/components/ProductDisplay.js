@@ -1,3 +1,5 @@
+import '../css/product.css'
+
 function ProductDisplay({ products }) {
   console.log('Rendering ProductDisplay with:', products);
 
