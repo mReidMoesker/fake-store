@@ -1,23 +1,38 @@
-import {CartButtonWrapper} from './CartButtonWrapper';
+import { useState, useEffect } from 'react';
+import CartButtonWrapper from './CartButtonWrapper';
+
+localStorage.setItem('cartItems', JSON.stringify([
+  { id: 1, name: 'product one' },
+  { id: 2, name: 'product two' }
+]));
+
+
 function ShoppingCartList() {
-  const item1 = {
-    name: 'product one',
-    id: 1
-  };
-    const item2 = {
-    name: 'product two',
-    id: 2
-  };
-  const itemsInCart = [item];
-  return(
-    <ul className="shopping-list">
+  const [itemsInCart, setItemsInCart] = useState([]);
+
+  useEffect(() => {
+    const storedItems = localStorage.getItem('cartItems');
+    if (storedItems) {
+      try {
+        setItemsInCart(JSON.parse(storedItems));
+      } catch (error) {
+        console.error('Error parsing cart items from localStorage', error);
+        setItemsInCart([]);
+      }
+    }
+  }, []);
+
+  return (
+    <ul>
+      {itemsInCart.length === 0 && <li>Your cart is empty.</li>}
       {itemsInCart.map(item => (
         <li key={item.id}>
-          {itemsInCart.name}
-          <CartButtonWrapper/>
+          {item.name}
+          <CartButtonWrapper />
         </li>
       ))}
     </ul>
-  )
+  );
 }
+
 export default ShoppingCartList;

@@ -1,31 +1,17 @@
-import {ShoppingCartList} from  '../components/ShoppingCartList';
-import {CreditCardForm} from '../components/CreditCardForm';
-
-function ProductFetcher({ onProductsLoaded }) {
-useEffect(() => {
-  const fetchProducts = async () => {
-    try {
-      const res = await axios.get('https://fakestoreapi.com/products');
-      onProductsLoaded(res.data);
-    } catch (error) {
-      console.error('Failed to fetch products:', error);
-      onProductsLoaded([]);
-    }
-  };
-
-  fetchProducts();
-}, [onProductsLoaded]);
- return null;
-}
+import ShoppingCartList from '../components/ShoppingCartList';
+import CreditCardForm from '../components/CreditCardForm';
+import '../css/shopping-cart/index.css';
 
 function ShoppingCart() {
-  return(
+  return (
     <main>
-      <h2>Shopping</h2>
-      <section>
-        <ShoppingCartList/>
-        <CreditCardForm/>
+      <h2>Shopping Cart</h2>
+      <section className="flex">
+        <ShoppingCartList />
+        <CreditCardForm />
       </section>
     </main>
-  )
+  );
 }
+
+export default ShoppingCart;

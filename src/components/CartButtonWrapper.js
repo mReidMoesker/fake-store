@@ -1,19 +1,22 @@
+import { FaPlus, FaEye, FaMinus, FaTrash } from 'react-icons/fa';
+
 function CartButtonWrapper() {
-  return(
-    <div className="flex">
-      <button >
+  return (
+    <div>
+      <button>
         <FaEye />
       </button>
-      <button >
-        <FaPlus/>
+      <button>
+        <FaPlus />
       </button>
       <button>
-        <FaMinus/>
+        <FaMinus />
       </button>
-      <button >
+      <button>
         <FaTrash />
       </button>
     </div>
-  )
+  );
 }
+
 export default CartButtonWrapper;
