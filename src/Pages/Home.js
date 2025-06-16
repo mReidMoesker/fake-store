@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import HeroBanner from '../Components/Home/HeroBanner.js';
-import SortFilter from '../Components/Home/SortFilter.js';
-import ProductGrid from '../Components/Home/ProductGrid.js';
-import Loader from '../Components/Home/Loader.js';
+import HeroBanner from '../components/Home/HeroBanner.js';
+import SortFilter from '../components/Home/SortFilter.js';
+import ProductGrid from '../components/Home/ProductGrid.js';
+import Loader from '../components/Home/Loader.js';
 import { fetchProducts } from '../Services/ProductService.js';
 
 function Home() {
