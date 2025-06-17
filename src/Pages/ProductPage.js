@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import ProductDetail from './ProductDetail';
-import FetchSingleProduct from './FetchSingleProduct.js';
+import ProductDetail from '../components/Product/ProductDetail.js';
+import FetchSingleProduct from '../components/Product/FetchSingleProduct.js';
 
 function ProductPage() {
   const [product, setProduct] = useState(null);
