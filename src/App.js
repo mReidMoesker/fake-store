@@ -1,6 +1,5 @@
-import Home from '../src/Pages/Home.js';
+import Home from '../src/pages/Home.js';
 import ShoppingCart from './pages/ShoppingCart';
-import './css/index.css';
 
 function App() {
   return (
