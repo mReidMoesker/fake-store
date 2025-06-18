@@ -1,12 +1,16 @@
-import Home from '../src/Pages/Home.js';
 import ShoppingCart from './pages/ShoppingCart';
+import Home from './pages/Home';
+
 import './css/index.css';
 
 function App() {
   return (
     <>
     <Home />
-    <ShoppingCart />
+    <ShoppingCart /> 
+
+ 
+
     </>
   );
 }
