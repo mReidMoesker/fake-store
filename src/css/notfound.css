@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+/* NotFound Page */
+.not-found {
+  height: calc(100vh - 60px);
+  display: grid;
+  align-items:center;
+}
+
+.not-found-content {
+  place-items: center;
+}
+
+.not-found-content img {
+  width: 400px;
+  height: 300px;
+}
+
+.not-found-btn {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  width:150px;
+  height:50px;
+  background-color: #f90;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.not-found-btn:hover {
+  background-color: rgb(160, 97, 4);
+}
