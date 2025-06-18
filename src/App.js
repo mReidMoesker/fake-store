@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
 import ShoppingCart from './pages/ShoppingCart';
-import Home from './pages/Home';
+import Home from '../src/pages/Home.js';
 
 import './css/index.css';
 
