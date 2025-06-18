@@ -1,11 +1,9 @@
-import Home from '../src/pages/Home.js';
-import ShoppingCart from './pages/ShoppingCart';
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
     <>
-    <Home />
-    <ShoppingCart />
+      <ProductPage />
     </>
   );
 }

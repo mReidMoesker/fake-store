@@ -30,6 +30,7 @@ h2 {
 .product-box {
   padding: 30px;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .product-list {
@@ -43,7 +44,7 @@ h2 {
 
 .product-image {
   width: 20%;
-  padding-right: 30px;
+  padding-right: 100px;
 }
 
 button {

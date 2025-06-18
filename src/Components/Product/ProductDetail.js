@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../../css/Product-Style/product'
+import '../../css/Product-Style/product.css';
 
 function ProductDetails({ product }) {
   const navigate = useNavigate();
