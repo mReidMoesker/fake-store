@@ -11,17 +11,17 @@ function Header() {
                     <nav>
                         <ul className='header-list'>
                             <li>
-                                <NavLink to="./" className={({isActive}) => isActive ? "header-active" : ""}>
+                                <NavLink to="./" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                                     Home
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to='/product' className={({isActive}) => isActive ? 'header-active' : ''}>
+                                <NavLink to='/product' className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
                                     Product
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink to="./about" className={({isActive}) => isActive ? "header-active" : ""}>
+                                <NavLink to="./about" className={({isActive}) => isActive ? "nav-link active" : "nav-link"}>
                                     About us
                                 </NavLink>
                             </li>
