@@ -3,10 +3,10 @@
 /* Header */
 .header-container {
   height: 100%; 
-  width: min(100% - 30px, 1080px);
+  width: min(100% - 30px, 1200px);
   margin-inline: auto;
+  display:flex;
   justify-content: space-between;
-  display: flex;
   align-items:center;
 }
 
@@ -16,25 +16,24 @@ header {
 }
 
 .header-list {
+  width:400px;
   display:flex;
-  gap:25px;
   list-style-type: none;
 }
 
-.header-list a {
-  text-decoration: none;
-  transition: 0.5s ease;
-  color: #000;
-}
-
-.header-list a:hover {
-  color:#f90;
-}
-
 .header-active {
-  border-bottom: 3px solid #f90;
-  font-weight: 500;
-  padding-bottom: 18px;
+  border-bottom: 2px solid #f90;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-link.active {
+  color: #f90;
+  font-weight: 600;
 }
 
 .cart-icon {

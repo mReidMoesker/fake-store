@@ -1,4 +1,5 @@
 import '../css/notfound.css';
+import { Link } from 'react-router-dom';
 
 function NotFound() {
   return (
@@ -11,7 +12,9 @@ function NotFound() {
         <h1>Oops! Page Not Found</h1>
         <p>We couldn't find the page you were looking for.
           It might have been moved or deleted.</p>
-        <button className="not-found-btn">Back to homepage</button>
+        <Link to="/">
+          <button className="not-found-btn">Back to homepage</button>
+        </Link>
       </div>
     </div>
   );
