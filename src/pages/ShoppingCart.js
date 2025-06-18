@@ -1,5 +1,5 @@
-import ShoppingCartList from '../components/ShoppingCartList';
-import CreditCardForm from '../components/CreditCardForm';
+import ShoppingCartList from '../components/ShopingCart/ShoppingCartList';
+import CreditCardForm from '../components/ShopingCart/CreditCardForm';
 import '../css/shopping-cart/index.css';
 
 function ShoppingCart() {
