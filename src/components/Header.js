@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
+import '../css/header.css';
 
 function Header() {
     return (
