@@ -21,4 +21,3 @@ function ProductFetcher({ onProductsLoaded }) {
 
 export default ProductFetcher;
 
-// Wasnt Necessary
