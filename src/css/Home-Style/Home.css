@@ -1,0 +1,8 @@
+.home-container {
+  background: linear-gradient(135deg, #ffffff 0%, #d6d9df 50%, #dfe3e7 100%);
+  max-width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+
