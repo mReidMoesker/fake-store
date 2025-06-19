@@ -19,18 +19,30 @@ code {
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  text-align: center;
   margin: 50px;
   width: 70%;
 }
 
 h2 {
   font-size: 30px;
+  margin-bottom: 40px;
 }
 
 .product-box {
   padding: 30px;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.category {
+  font-size: 10px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 10px;
 }
 
 .product-list {
@@ -44,7 +56,13 @@ h2 {
 
 .product-image {
   width: 20%;
-  padding-right: 100px;
+  margin: 100px;
+}
+
+.product-description {
+  font-size: 25px;
+  color: rgb(50, 50, 50);
+  margin-bottom: 10px;
 }
 
 button {
@@ -57,4 +75,16 @@ button {
 
 button:hover {
   background-color: yellow;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
