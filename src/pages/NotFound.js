@@ -13,7 +13,7 @@ function NotFound() {
         <p>We couldn't find the page you were looking for.
           It might have been moved or deleted.</p>
         <Link to="/">
-          <button className="not-found-btn">Back to homepage</button>
+          <button className="button-29">Back to homepage</button>
         </Link>
       </div>
     </div>

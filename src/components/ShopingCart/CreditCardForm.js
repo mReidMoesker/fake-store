@@ -43,7 +43,7 @@ function CreditCardForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <p>⚠️ This is a fake form. Do not enter real credit card info.</p>
+      <p>⚠️This is a fake form. Do not enter real credit card info⚠️</p>
 
       <div>
         <label>Cardholder Name</label>
@@ -87,8 +87,8 @@ function CreditCardForm() {
         />
         {errors.cvv && <p>{errors.cvv}</p>}
       </div>
-
-      <button type="submit">Submit (Fake)</button>
+    {/* button disabled to prevent people adding credit card */}
+      <button type="submit" className="button-29" disabled>Submit (Fake)</button>
 
       {submitted && <p>Form submitted successfully (fake)</p>}
     </form>

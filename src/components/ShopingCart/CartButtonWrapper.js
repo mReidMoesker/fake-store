@@ -3,16 +3,16 @@ import { FaPlus, FaEye, FaMinus, FaTrash } from 'react-icons/fa';
 function CartButtonWrapper() {
   return (
     <div>
-      <button>
+      <button className="button-small">
         <FaEye />
       </button>
-      <button>
+      <button className="button-small">
         <FaPlus />
       </button>
-      <button>
+      <button className="button-small">
         <FaMinus />
       </button>
-      <button>
+      <button className="button-small">
         <FaTrash />
       </button>
     </div>

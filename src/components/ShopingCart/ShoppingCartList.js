@@ -23,11 +23,11 @@ function ShoppingCartList() {
   }, []);
 
   return (
-    <ul>
-      {itemsInCart.length === 0 && <li>Your cart is empty.</li>}
+    <ul className="shopping-cart-list">
+      <p>{itemsInCart.length === 0 && <li>Your cart is empty.</li>}</p>
       {itemsInCart.map(item => (
         <li key={item.id}>
-          {item.name}
+          <p>{item.name}</p>
           <CartButtonWrapper />
         </li>
       ))}
