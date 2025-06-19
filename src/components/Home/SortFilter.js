@@ -1,14 +1,15 @@
 import React from 'react';
+import '../../css/Home-Style/SortFilter.css'; 
 
 function SortFilter({ sortOption, setSortOption }) {
   return (
-    <div style={{ marginBottom: '1rem' }}>
-      <label htmlFor="sort" style={{ marginRight: '0.5rem' }}>Sort Product by:</label>
+    <div className="sort-filter-container">
+      <label htmlFor="sort" className="sort-filter-label">Sort Product by:</label>
       <select
         id="sort"
         value={sortOption}
         onChange={(e) => setSortOption(e.target.value)}
-        style={{ padding: '0.3rem' }}
+        className="sort-filter-select"
       >
         <option value="name-asc">Name: A - Z</option>
         <option value="name-desc">Name: Z - A</option>
@@ -19,5 +20,5 @@ function SortFilter({ sortOption, setSortOption }) {
   );
 }
 
-
 export default SortFilter;
+

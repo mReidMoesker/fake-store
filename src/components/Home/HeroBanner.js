@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../../css/Home-Style/HeroBanner.css';
 
 function HeroBanner() {
   const brands = [
@@ -14,18 +15,17 @@ function HeroBanner() {
     'Microsoft',
   ];
 
-  // Define brand-specific URLs
   const brandLinks = {
-    Apple: '/brands/apple',
-    Samsung: '/brands/samsung',
-    Sony: '/brands/sony',
-    Nike: '/brands/nike',
-    Adidas: '/brands/adidas',
-    LG: '/brands/lg',
-    Dell: '/brands/dell',
-    HP: '/brands/hp',
-    Asus: '/brands/asus',
-    Microsoft: '/brands/microsoft',
+      Apple: 'https://www.apple.com',
+      Samsung: 'https://www.samsung.com',
+      Sony: 'https://www.sony.com',
+      Nike: 'https://www.nike.com',
+      Adidas: 'https://www.adidas.com',
+      LG: 'https://www.lg.com',
+      Dell: 'https://www.dell.com',
+      HP: 'https://www.hp.com',
+      Asus: 'https://www.asus.com',
+      Microsoft: 'https://www.microsoft.com',
   };
 
   const [shuffledBrands, setShuffledBrands] = useState([]);
@@ -36,72 +36,33 @@ function HeroBanner() {
   }, []);
 
   return (
-    <div
-      style={{
-        backgroundColor: '#007bff',
-        color: 'white',
-        padding: '2rem',
-        borderRadius: '8px',
-        marginBottom: '2rem',
-        textAlign: 'center',
-      }}
-    >
-      <h1>Doing Some Basic Testing</h1>
-      <p>This Is A Test Page</p>
-
-      {/* Scrolling brands container */}
-      <div
-        style={{
-          overflow: 'hidden',
-          whiteSpace: 'nowrap',
-          marginTop: '1.5rem',
-          borderTop: '1px solid rgba(255,255,255,0.3)',
-          paddingTop: '1rem',
-        }}
-      >
-        <div
-          style={{
-            display: 'inline-block',
-            paddingLeft: '100%',
-            animation: 'marquee 15s linear infinite',
-            fontWeight: 'bold',
-            fontSize: '1.2rem',
-            
-          }}
-        >
+    <div className="hero-banner">
+      <h1>Premium Brands, Exceptional Experiences</h1>
+      <p>
+      Discover cutting-edge technology, innovative design,
+     and world-class quality from the brands that define excellence.
+        From smartphones to sportswear, laptops to lifestyle products – find everything you need in one
+         trusted destination
+      </p>
+      <div className="hero-banner__buttons">
+        <button className="hero-banner__btn explore">Explore More</button>
+        <button className="hero-banner__btn buy">Buy Now</button>
+      </div>
+      <div className="hero-banner__marquee-container">
+        <div className="hero-banner__marquee">
           {shuffledBrands.map((brand, index) => (
             <a
               key={index}
               href={brandLinks[brand]}
-              style={{
-                    marginRight: '3rem',
-                    color: 'white',
-                    textDecoration: 'none'
-                    }}
->
+              className="hero-banner__brand-link"
+            >
               {brand}
             </a>
           ))}
         </div>
       </div>
-
-      {/* Keyframes style */}
-      <style>
-        {`
-          @keyframes marquee {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-100%);
-            }
-          }
-        `}
-      </style>
     </div>
   );
 }
 
 export default HeroBanner;
-
-
