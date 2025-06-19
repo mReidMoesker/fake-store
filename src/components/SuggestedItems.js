@@ -21,12 +21,12 @@ function SuggestedItems() {
   return (
     <div className="suggested-items">
       <h2>Top Sellers</h2>
-      <div className="product-list">
+      <div className="suggested-product-list">
         {products.map(product => (
-          <div key={product.id} className="product-card">
+          <div key={product.id} className="suggested-product-card">
             <img src={product.image} alt={product.title} />
             <h4>{product.title}</h4>
-            <h2>${product.price.toFixed(2)}</h2>
+            <h3>${product.price.toFixed(2)}</h3>
           </div>
         ))}
       </div>
