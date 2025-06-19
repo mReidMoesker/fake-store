@@ -5,6 +5,8 @@ function ProductDetails({ product }) {
   const navigate = useNavigate();
 
   const handleAddToCart = () => {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
     const existingIndex = cart.findIndex(item => item.id === product.id);
     
     if (existingIndex !== -1) {
@@ -13,7 +15,6 @@ function ProductDetails({ product }) {
       cart.push({ ...product, quantity: 1 });
     }
 
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const updatedCart = [...cart, product];
     localStorage.setItem('cart', JSON.stringify(updatedCart));
     navigate('/cart');
