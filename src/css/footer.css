@@ -1,11 +1,11 @@
 @charset 'utf-8';
 
 /* Footer */
-.footer {
-  background-color: #312f2f;
+footer {
+  background-color: #0D1117;
   padding: 40px 20px 20px;
   font-size: 14px;
-  color: #fff;
+  color: #fefefe;
 }
 
 .footer-columns {
@@ -56,7 +56,7 @@
   border-top: 1px solid #fff;
   padding-top: 20px;
   font-size: 13px;
-  color: #fff;
+  color: #A07EFF;
 }
 
 .social-icons {
@@ -66,23 +66,8 @@
 .social-icons a {
   margin-left: 15px;
   font-size: 18px;
+  color: #A07EFF;
   transition: transform 0.5s ease;
-}
-
-.social-icons .facebook {
-  color: #1877F2; 
-}
-
-.social-icons .instagram {
-  color: #E4405F; 
-}
-
-.social-icons .twitter {
-  color: #1DA1F2; 
-}
-
-.social-icons .youtube {
-  color: #FF0000; 
 }
 
 .social-icons a:hover {

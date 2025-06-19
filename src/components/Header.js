@@ -6,7 +6,7 @@ function Header() {
     return (
         <header>
             <div className='header-container'>
-                <h1>Fake Store</h1>
+                <h1>More Faux Less</h1>
                 <div>
                     <nav>
                         <ul className='header-list'>

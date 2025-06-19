@@ -12,27 +12,38 @@
 
 header {
   height: 60px;
-  background-color: rgb(181, 180, 190);
+  background-color: #1A2233;
+  color: #fefefe;
+  a {
+    color: #fefefe;
+  }
 }
 
 .header-list {
-  width:400px;
+  width:30svw;
   display:flex;
+  justify-content: space-between;
   list-style-type: none;
 }
 
 .header-active {
-  border-bottom: 2px solid #f90;
+  border-bottom: 2px solid #A07EFF;
 }
 
 .nav-link {
-  color: #000;
   text-decoration: none;
   font-weight: 400;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.5s ease;
+}
+
+.nav-link:hover {
+  background-color: #0D1117;
 }
 
 .nav-link.active {
-  color: #f90;
+  color: #A07EFF;
   font-weight: 600;
 }
 
