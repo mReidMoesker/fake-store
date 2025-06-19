@@ -4,8 +4,6 @@ import SortFilter from '../components/Home/SortFilter.js';
 import ProductGrid from '../components/Home/ProductGrid.js';
 import Loader from '../components/Home/Loader.js';
 import { fetchProducts } from '../Services/ProductService.js';
-import '../css/Home-Style/Home.css';
-
 function Home() {
   const [products, setProducts] = useState([]);
   const [sortOption, setSortOption] = useState('name-asc');

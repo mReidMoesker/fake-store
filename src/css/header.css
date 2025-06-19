@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+/* Header */
+.header-container {
+  height: 100%; 
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+header {
+  height: 60px;
+  background-color: rgb(181, 180, 190);
+}
+
+.header-list {
+  width:400px;
+  display:flex;
+  list-style-type: none;
+}
+
+.header-active {
+  border-bottom: 2px solid #f90;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-link.active {
+  color: #f90;
+  font-weight: 600;
+}
+
+.cart-icon {
+  color:#000;
+  font-size: 28px;
+  transition: 0.5s ease;
+}
+
+.cart-icon:hover {
+  color:#f90;
+}

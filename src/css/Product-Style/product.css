@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  width: 70%;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.product-box {
+  padding: 30px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.category {
+  font-size: 10px;
+  color: rgb(80, 80, 80);
+  margin-bottom: 10px;
+}
+
+.product-list {
+  margin-bottom: 16px;
+}
+
+.product-price {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.product-image {
+  width: 20%;
+  margin: 100px;
+}
+
+.product-description {
+  font-size: 25px;
+  color: rgb(50, 50, 50);
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: rgb(175, 175, 1);
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

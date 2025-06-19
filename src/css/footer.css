@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+/* Footer */
+.footer {
+  background-color: #312f2f;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #fff;
+}
+
+.social-icons {
+  display:flex;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  font-size: 18px;
+  transition: transform 0.5s ease;
+}
+
+.social-icons .facebook {
+  color: #1877F2; 
+}
+
+.social-icons .instagram {
+  color: #E4405F; 
+}
+
+.social-icons .twitter {
+  color: #1DA1F2; 
+}
+
+.social-icons .youtube {
+  color: #FF0000; 
+}
+
+.social-icons a:hover {
+  transform: scale(1.3);
+}
