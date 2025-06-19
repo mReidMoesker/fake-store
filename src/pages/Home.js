@@ -46,11 +46,9 @@ function Home() {
 
   return (
     <div style={{ maxWidth: '1200px', margin: 'auto', padding: '1rem' }}>
-      <Header />
       <HeroBanner />
       <SortFilter sortOption={sortOption} setSortOption={setSortOption} />
       {loading ? <Loader /> : <ProductGrid products={sortedProducts} />}
-      <Footer />
     </div>
   );
 };
