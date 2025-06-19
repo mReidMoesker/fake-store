@@ -1,4 +1,4 @@
-import '../css/notfound.css';
+import '../css/shopping-cart/index.css';
 import { Link } from 'react-router-dom';
 
 function NotFound() {

@@ -248,6 +248,44 @@ form > p:last-child {
   transform: translateY(1px);
 }
 
+.not-found {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.not-found-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-content img {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+}
+
+.not-found-btn {
+  margin-top: 20px;
+  margin-bottom: 200px;
+  width:150px;
+  height:50px;
+  background-color: #f90;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.not-found-btn:hover {
+  background-color: rgb(160, 97, 4);
+}
+
 @media(max-width: 750px) {
   li {
     width: 400px;
