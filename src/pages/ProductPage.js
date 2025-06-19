@@ -1,15 +1,15 @@
+import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import ProductDetail from '../components/Product/ProductDetail.js';
-import FetchSingleProduct from '../components/Product/FetchSingleProduct.js';
+import ProductDetail from '../components/Product/ProductDetail';
+import FetchSingleProduct from '../components/Product/FetchSingleProduct';
 
 function ProductPage() {
+  const { id } = useParams();
   const [product, setProduct] = useState(null);
-
-  const productId = 5;
 
   return (
     <div>
-      <FetchSingleProduct productId={productId} onProductLoaded={setProduct} />
+      <FetchSingleProduct productId={id} onProductLoaded={setProduct} />
       <ProductDetail product={product} />
     </div>
   );
