@@ -1,15 +1,10 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import '../../css/Home-Style/ProductGrid.css';
 
 function ProductGrid({ products }) {
   return (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit,minmax(200px,1fr))',
-        gap: '1rem',
-      }}
-    >
+    <div className="product-grid">
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
