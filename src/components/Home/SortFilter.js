@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Home-Style/SortFilter.css'; 
+import '../../css/Home-Style/Home.css'; 
 
 function SortFilter({ sortOption, setSortOption }) {
   return (

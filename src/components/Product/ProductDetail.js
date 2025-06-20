@@ -30,7 +30,7 @@ function ProductDetails({ product }) {
 
   return (
     <>
-      <div className='container'>
+      <div className='container product-container'>
         <div className='flex product-box'>
           <img src={product.image} alt={product.title} className='product-image' />
           <div className='product-text'>
