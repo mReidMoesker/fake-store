@@ -48,11 +48,11 @@ header {
 }
 
 .cart-icon {
-  color:#000;
+  color:#fefefe;
   font-size: 28px;
   transition: 0.5s ease;
 }
 
 .cart-icon:hover {
-  color:#f90;
+  color:#A07EFF;
 }

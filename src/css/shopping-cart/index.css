@@ -85,7 +85,7 @@ h2 {
 
   li {
     display: flex;
-    width: 600px;
+    width: 55svw;
     height: 50px;
     margin-bottom: 25px;
     border-radius: 6px;
@@ -111,7 +111,10 @@ h2 {
     background-color: var(--clr-card-char);
   }
 }
-
+.quantity {
+  font-size: 1.4rem;
+  color: var(--clr-text);
+}
 form {
   flex: 1;
   max-width: 400px;

@@ -10,7 +10,7 @@ function CreditCardForm() {
 
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
+/* Validation functionality equipped*/
   const validate = () => {
     const newErrors = {};
 
@@ -51,6 +51,7 @@ function CreditCardForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
+          placeholder="You wouldn't actually put your card number in?"
         />
         {errors.name && <p>{errors.name}</p>}
       </div>
@@ -62,6 +63,7 @@ function CreditCardForm() {
           value={formData.cardNumber}
           onChange={handleChange}
           maxLength={16}
+          placeholder="Would you?"
         />
         {errors.cardNumber && <p>{errors.cardNumber}</p>}
       </div>

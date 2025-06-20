@@ -11,6 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --clr-bg-dark: #0D1117;
+  --clr-card-char: #1A2233;
+  --clr-accent-purple: #A07EFF;
+  --clr-text: #fefefe;
+  --app-border-rad: 6px;
+  --app-spacing: 25px;
+}
 
 .flex {
   display: flex;
@@ -19,24 +27,21 @@ code {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 50px;
-  width: 70%;
+  width: min(100% - 30px, 1200px);
+  margin-inline: auto;
 }
-
 h2 {
   font-size: 30px;
   margin-bottom: 40px;
 }
 
 .product-box {
-  padding: 30px;
-  gap: 30px;
-  justify-content: center;
+  width: 100%;
+  display: flex;
   align-items: center;
-  text-align: left;
+  text-align: center;
+
+  margin: 50px;
 }
 
 .category {
@@ -54,14 +59,17 @@ h2 {
   font-size: 25px;
 }
 
-.product-image {
-  width: 20%;
-  margin: 100px;
-}
 
+.product-image {
+    width: 30svw;
+}
+.product-text {
+  width: 40svw;
+  padding: 25px;
+}
 .product-description {
-  font-size: 25px;
-  color: rgb(50, 50, 50);
+  font-size: 1.2rem;
+  color: var(--clr-text);
   margin-bottom: 10px;
 }
 

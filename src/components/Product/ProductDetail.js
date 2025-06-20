@@ -38,7 +38,7 @@ function ProductDetails({ product }) {
             <p className='product-price'>${product.price}</p>
             <p className='product-description'>{product.description}</p>
             <p className='category'>Category: {product.category}</p>
-            <button onClick={handleAddToCart}>Add to Cart</button>
+            <button className="button-29"onClick={handleAddToCart}>Add to Cart</button>
           </div>
         </div>
       </div>

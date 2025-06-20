@@ -46,6 +46,7 @@ function ShoppingCartList() {
       {itemsInCart.map(item => (
         <li key={item.id}>
           <p>{item.name}</p>
+          <p className='quantity'>{item.quantity}</p>
           <CartButtonWrapper
           onView={() => handleView(item.id)}
             onIncrease={()=> handIncrease(item.id)}
