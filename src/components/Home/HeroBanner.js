@@ -46,7 +46,7 @@ function HeroBanner() {
       </p>
       <div className="hero-banner__buttons">
         <button className="button-29 explore">Explore More</button>
-        <button className="button-29 buy">Buy Now</button>
+        <button className="button-29 lite">Buy Now</button>
       </div>
       <div className="hero-banner__marquee-container">
         <div className="hero-banner__marquee">
